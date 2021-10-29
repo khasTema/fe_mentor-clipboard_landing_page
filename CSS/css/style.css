@@ -16,6 +16,39 @@ li {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+body {
+  text-align: center;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  color: #9fabb2;
+}
+
+h1,
+h2,
+h3 {
+  color: #474747;
+}
+
+h1 {
+  margin-top: -0.3em;
+}
+
+h2 {
+  margin-top: 5em;
+}
+
+.hero {
+  margin: 0 auto;
+  padding: 8em 0 4em;
+  background: url(../../images/bg-header-desktop.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
