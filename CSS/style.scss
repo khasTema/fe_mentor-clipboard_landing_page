@@ -1,6 +1,11 @@
 @import "variables";
 @import "normalize";
 
+@mixin FLEX{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 body{
     text-align: center;
     font-family: $mainFont;
@@ -46,9 +51,8 @@ footer{
     max-width: 470px;
     margin: 0 auto;
     padding: 2em 1em;
-    display: flex;
+    @include FLEX;
     justify-content: space-around;
-    flex-wrap: wrap;
     .download_btn{
         display: inline-block;
         color: #fff; 
@@ -66,22 +70,18 @@ footer{
 }
 
 .description_features{
-    // border: 1px dashed green;
     max-width: 1440px;
     margin: 5em auto 0;
-    display: flex;
-    flex-wrap: wrap;
+    @include FLEX;
     align-items: center;
     img{
         margin-left: -3em;
     }
     .description_features_items{
-        // border: 1px dashed red;
         width: 50%;
         padding: 0 4em;
         text-align: left;
-        display: flex;
-        flex-wrap: wrap;
+        @include FLEX;
         flex-direction: column;
         justify-content: space-between;
         .features_item{
@@ -102,7 +102,6 @@ footer{
 
 .workflow{
     .workflow_items{
-        // border: 1px dashed green;
         max-width: 1300px;
         margin: 5em auto 0;
         display: flex;
@@ -127,41 +126,63 @@ footer{
     .list{
         max-width: 1300px;
         margin: 0 auto;
-        display: flex;
+        @include FLEX;
         justify-content: space-between;
-        flex-wrap: wrap;
     }
 }
 
 
+footer{
+    background-color: $Footer;
+    .footer_wrapper{
+        max-width: 1300px;
+        margin: 0 auto;
+        @include FLEX;
+        justify-content: space-between;
+        padding-top: 2em;
+        .footer_logo{
+            img{
+                width: 50%;
+            }
+        }
+        .footer_links{
+            @include FLEX;
+            justify-content: space-between;
+            .links_bloc{
+                margin-right: 5em;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                a{
+                    display: block;
+                    color: $Grayish_Blue;
+                }
+                a:hover{
+                    color: $Light_Blue;
+                    cursor: pointer;
+                }
+            }  
+        }
+        .footer_social_links{
+            width: 150px;
+            margin-left: 15em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a:hover{
+                cursor: pointer;
+            }
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+}
 
 // standart footer
 .attribution { 
     font-size: 11px; 
     text-align: center; 
     a { 
-        color: hsl(228, 45%, 44%); 
+        color: $Strong_Cyan; 
     }  
 }

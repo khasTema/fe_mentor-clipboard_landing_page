@@ -65,8 +65,8 @@ footer {
   margin: 0 auto;
   padding: 2em 1em;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .download_btns .download_btn {
   display: inline-block;
@@ -135,8 +135,53 @@ footer {
   max-width: 1300px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: #f2f4f6;
+}
+footer .footer_wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+footer .footer_wrapper .footer_logo img {
+  width: 50%;
+}
+footer .footer_wrapper .footer_links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .footer_wrapper .footer_links .links_bloc {
+  margin-right: 5em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer_wrapper .footer_links .links_bloc a {
+  display: block;
+  color: #9fabb2;
+}
+footer .footer_wrapper .footer_links .links_bloc a:hover {
+  color: #6173ff;
+  cursor: pointer;
+}
+footer .footer_wrapper .footer_social_links {
+  width: 150px;
+  margin-left: 15em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer_wrapper .footer_social_links a:hover {
+  cursor: pointer;
 }
 
 .attribution {
@@ -144,5 +189,5 @@ footer {
   text-align: center;
 }
 .attribution a {
-  color: #3e52a3;
+  color: #26baa4;
 }
