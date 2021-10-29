@@ -1,7 +1,23 @@
-body {
-  background-color: red;
+* {
+  box-sizing: border-box;
 }
 
-h1 {
-  color: green;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: url(../images/bg-header-desktop.png) center no-repeat;
+  max-width: 600px;
+  margin: 0 auto;
 }

@@ -1,9 +1,9 @@
 @import "variables";
+@import "normalize";
 
-body{
-    background-color: $myColor;
-}
 
-h1{
-    color: $textColor;
+.hero{
+    background: url(../images/bg-header-desktop.png) center no-repeat;
+    max-width: 600px;
+    margin: 0 auto;
 }
