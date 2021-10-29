@@ -16,8 +16,10 @@ li {
   padding: 0;
 }
 
-.hero {
-  background: url(../images/bg-header-desktop.png) center no-repeat;
-  max-width: 600px;
-  margin: 0 auto;
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
 }
