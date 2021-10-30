@@ -24,6 +24,7 @@ body {
   text-align: center;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 18px;
+  font-weight: 400;
   color: #9fabb2;
 }
 
@@ -31,6 +32,7 @@ h1,
 h2,
 h3 {
   color: #474747;
+  font-weight: 600;
 }
 
 h1 {
@@ -135,6 +137,9 @@ footer {
   margin-top: 1.5em;
 }
 
+.partners_list h3 {
+  display: none;
+}
 .partners_list .list {
   max-width: 1300px;
   margin: 0 auto;
@@ -154,6 +159,7 @@ footer .footer_wrapper {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 2em;
+  padding-bottom: 5em;
 }
 footer .footer_wrapper .footer_logo img {
   width: 50%;

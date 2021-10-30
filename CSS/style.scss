@@ -10,6 +10,7 @@ body{
     text-align: center;
     font-family: $mainFont;
     font-size: $mainFont_size;
+    font-weight: 400;
     color: $Grayish_Blue;
 }
 
@@ -17,6 +18,7 @@ h1,
 h2,
 h3{
     color: rgb(71, 71, 71);
+    font-weight: 600;
 }
 
 h1{
@@ -127,6 +129,9 @@ footer{
 
 
 .partners_list{
+    h3{
+        display: none;
+    }
     .list{
         max-width: 1300px;
         margin: 0 auto;
@@ -145,6 +150,7 @@ footer{
         @include FLEX;
         justify-content: space-between;
         padding-top: 2em;
+        padding-bottom: 5em;
         .footer_logo{
             img{
                 width: 50%;
