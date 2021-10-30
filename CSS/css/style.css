@@ -57,15 +57,16 @@ footer {
 }
 
 .tagline {
+  width: 95%;
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 1.5em;
 }
 
 .download_btns {
+  width: 95%;
   max-width: 470px;
   margin: 0 auto;
-  padding: 2em 1em;
+  padding: 2em 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -86,6 +87,7 @@ footer {
 }
 
 .description_features {
+  width: 100%;
   max-width: 1440px;
   margin: 5em auto 0;
   display: flex;
@@ -121,14 +123,15 @@ footer {
 }
 
 .workflow .workflow_items {
+  width: 90%;
   max-width: 1300px;
   margin: 5em auto 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .workflow .workflow_items .workflow_item {
-  padding: 0 3.5em;
+  width: 30%;
 }
 .workflow .workflow_items .workflow_item h3 {
   margin-top: 2em;
@@ -141,6 +144,7 @@ footer {
   display: none;
 }
 .partners_list .list {
+  width: 95%;
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 1em;
